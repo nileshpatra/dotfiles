@@ -154,6 +154,9 @@ bindsym $mod+9 workspace $ws9
 bindsym $mod+0 workspace $ws10
 
 #rofi menu
+bindsym $mod+Shift+w exec --no-startup-id firefox 
+
+#rofi menu
 bindsym $mod+q exec --no-startup-id rofi -show drun -theme /usr/share/rofi/themes/Pop-Dark.rasi 
 
 # move focused container to workspace
@@ -206,9 +209,9 @@ bindsym $mod+r mode "resize"
 bindsym $mod+p exec --no-startup-id i3lock-fancy -gpf Comic-Sans-MS -- scrot -z
 exec_always --no-startup-id xautolock -time 3 -locker "i3lock-fancy -gpf Comic-Sans-MS -- scrot -z"
 exec_always nm-applet
-exec --no-startup-id feh --bg-scale /home/nilesh/wallpapers/scenery.jpg
+exec --no-startup-id feh --bg-scale /home/nilesh/wallpapers/tux.jpg
 exec --no-startup-id xset -b 
-exec --no-startup-id feh --bg-fill /home/nilesh/wallpapers/scenery.jpg
+exec --no-startup-id feh --bg-fill /home/nilesh/wallpapers/tux.jpg
 #exec --no-startup-id xcompmgr
 exec --no-startup-id compton --config ~/.config/compton.conf
 
